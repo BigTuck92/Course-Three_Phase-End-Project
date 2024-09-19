@@ -2439,3 +2439,15 @@ Contains: Missing org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:10.
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 18:35:34.565
 !MESSAGE Classpath changed for project: EurekaServer
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 18:44:41.119
+!MESSAGE Classpath changed for project: Configuration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 18:44:41.120
+!MESSAGE Boot project ADDED: Configuration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 18:44:41.895
+!MESSAGE Classpath changed for project: Configuration
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-19 18:44:42.327
+!MESSAGE Classpath changed for project: Configuration
