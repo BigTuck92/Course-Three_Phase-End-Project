@@ -1865,3 +1865,21 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.to
 2024-09-19 19:45:37,374 [Worker-90: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA-javadoc.jar
 2024-09-19 19:45:37,376 [Worker-90: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for org.javassist:javassist:3.29.0-GA
 2024-09-19 19:55:56,254 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-19 19:55:56,261 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-19 19:55:56,264 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
+2024-09-19 19:56:54,997 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@69603cae{STOPPING}[12.0.6,sto=0]
+2024-09-19 19:56:55,000 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5dcfdcbe{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-09-19 20:45:04,273 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-19 20:45:05,445 [Worker-12: Repository registry initialization] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read settingsCacheMap.xml, assuming default values
+org.apache.maven.settings.building.SettingsBuildingException: 2 problems were encountered while building the effective settings
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+
+	at org.apache.maven.settings.building.DefaultSettingsBuilder.build(DefaultSettingsBuilder.java:115)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$MavenSettings.getSettings(MavenImpl.java:1117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:279)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:273)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:229)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-09-19 20:47:12,281 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 22.0.1+8
