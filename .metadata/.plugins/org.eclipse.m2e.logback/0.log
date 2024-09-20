@@ -1883,3 +1883,9 @@ org.apache.maven.settings.building.SettingsBuildingException: 2 problems were en
 	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 2024-09-19 20:47:12,281 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 22.0.1+8
+2024-09-19 20:47:12,335 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@1e3fbb81{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@58372293{STARTED}}
+2024-09-19 20:47:12,335 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-09-19 20:47:12,356 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4d713d7c{HTTP/1.1, (http/1.1)}{127.0.0.1:56350}
+2024-09-19 20:47:12,371 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@7bd2e7c0{STARTING}[12.0.6,sto=0] @142766ms
+2024-09-19 21:19:01,211 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@7bd2e7c0{STOPPING}[12.0.6,sto=0]
+2024-09-19 21:19:01,214 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4d713d7c{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
