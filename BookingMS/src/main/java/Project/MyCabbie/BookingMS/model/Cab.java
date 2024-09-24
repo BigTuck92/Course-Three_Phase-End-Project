@@ -1,19 +1,12 @@
 package Project.MyCabbie.BookingMS.model;
 
-import org.springframework.data.annotation.Id;
+import org.springframework.stereotype.Component;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
-@Entity
+@Component
 public class Cab {
 
 	// Fields
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
-	
 	private String type;
 	private Integer rate;
 	

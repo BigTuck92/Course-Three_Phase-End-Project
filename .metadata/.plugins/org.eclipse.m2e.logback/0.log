@@ -1889,3 +1889,69 @@ org.apache.maven.settings.building.SettingsBuildingException: 2 problems were en
 2024-09-19 20:47:12,371 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@7bd2e7c0{STARTING}[12.0.6,sto=0] @142766ms
 2024-09-19 21:19:01,211 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@7bd2e7c0{STOPPING}[12.0.6,sto=0]
 2024-09-19 21:19:01,214 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4d713d7c{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-09-23 19:57:31,585 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-23 19:57:32,788 [Worker-3: Repository registry initialization] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read settingsCacheMap.xml, assuming default values
+org.apache.maven.settings.building.SettingsBuildingException: 2 problems were encountered while building the effective settings
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+
+	at org.apache.maven.settings.building.DefaultSettingsBuilder.build(DefaultSettingsBuilder.java:115)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$MavenSettings.getSettings(MavenImpl.java:1117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:279)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:273)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:229)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-09-23 20:59:26,221 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-23 20:59:27,203 [Worker-12: Repository registry initialization] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read settingsCacheMap.xml, assuming default values
+org.apache.maven.settings.building.SettingsBuildingException: 2 problems were encountered while building the effective settings
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+
+	at org.apache.maven.settings.building.DefaultSettingsBuilder.build(DefaultSettingsBuilder.java:115)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$MavenSettings.getSettings(MavenImpl.java:1117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:279)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:273)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:229)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-09-23 20:59:55,577 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.6; built: 2024-01-30T02:43:24.387Z; git: 78ab6e6ba163f89cdd97f2ae0283fbb5e371cfaf; jvm 22.0.1+8
+2024-09-23 20:59:55,619 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@4ac1168d{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@6d63669d{STARTED}}
+2024-09-23 20:59:55,619 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-09-23 20:59:55,637 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3a713f9{HTTP/1.1, (http/1.1)}{127.0.0.1:52280}
+2024-09-23 20:59:55,653 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@6b905547{STARTING}[12.0.6,sto=0] @45265ms
+2024-09-23 21:02:49,897 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:02:49,914 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:02:49,921 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
+2024-09-23 21:02:51,443 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:02:51,463 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:02:51,468 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\Configuration\src\test\resources
+2024-09-23 21:02:52,914 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:02:52,930 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:02:52,936 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\EurekaServer\src\test\resources
+2024-09-23 21:06:04,606 [Worker-34: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Project.MyCabbie:BookingMS:0.0.1-SNAPSHOT @ C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\pom.xml.
+2024-09-23 21:06:06,035 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:06:06,037 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:06:06,042 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
+2024-09-23 21:06:06,044 [Worker-34: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BookingMS
+2024-09-23 21:06:06,045 [Worker-34: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BookingMS
+2024-09-23 21:06:06,660 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:06:06,673 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:06:06,676 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
+2024-09-23 21:06:15,027 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-09-23 21:06:15,401 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Project.MyCabbie:BookingMS:0.0.1-SNAPSHOT @ C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\pom.xml.
+2024-09-23 21:06:17,134 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BookingMS/src/main/java
+2024-09-23 21:06:17,136 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BookingMS/src/main/resources
+2024-09-23 21:06:17,136 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BookingMS/src/main/resources
+2024-09-23 21:06:17,137 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BookingMS/src/test/java
+2024-09-23 21:06:17,138 [Worker-34: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BookingMS/src/test/resources
+2024-09-23 21:06:18,357 [Worker-34: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BookingMS
+2024-09-23 21:06:18,399 [Worker-34: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 1.00 sec 
+2024-09-23 21:06:18,691 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:06:18,703 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:06:18,707 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
+2024-09-23 21:06:18,707 [Worker-34: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BookingMS
+2024-09-23 21:06:18,707 [Worker-34: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BookingMS
+2024-09-23 21:07:36,863 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 21:07:36,868 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 21:07:36,871 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\natha\OneDrive\Desktop\Course 3 Phase End Project\BookingMS\src\test\resources
