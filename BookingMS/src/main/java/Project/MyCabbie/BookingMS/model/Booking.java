@@ -1,42 +1,34 @@
 package Project.MyCabbie.BookingMS.model;
 
-import org.springframework.data.annotation.Id;
+import org.springframework.stereotype.Component;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
-@Entity
+@Component
 public class Booking {
 
 	// Fields
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer id;
-	
-	private Cab cab;
+	private Integer cabRate;
 	private Integer distance;
-	private Double fare;
+	private Double totalFare;
 	
 	// Constructors
 	public Booking() {
 		super();
 	}
 
-	public Booking(Integer id, Cab cab, Double fare) {
+	public Booking(Integer cabRate, Integer distance, Double totalFare) {
 		super();
-		this.id = id;
-		this.cab = cab;
-		this.fare = fare;
+		this.cabRate = cabRate;
+		this.distance = distance;
+		this.totalFare = totalFare;
 	}
 
 	// Getters and Setters
-	public Integer getId() {
-		return id;
+	public Integer getCabRate() {
+		return cabRate;
 	}
-	
-	public void setId(Integer id) {
-		this.id = id;
+
+	public void setCabRate(Integer cabRate) {
+		this.cabRate = cabRate;
 	}
 
 	public Integer getDistance() {
@@ -47,25 +39,17 @@ public class Booking {
 		this.distance = distance;
 	}
 
-	public Cab getCab() {
-		return cab;
+	public Double getTotalFare() {
+		return totalFare;
 	}
 
-	public void setCab(Cab cab) {
-		this.cab = cab;
-	}
-
-	public Double getFare() {
-		return fare;
-	}
-
-	public void setFare(Double fare) {
-		this.fare = fare;
+	public void setTotalFare(Double totalFare) {
+		this.totalFare = totalFare;
 	}
 
 	@Override
 	public String toString() {
-		return "Booking [id=" + id + ", cab=" + cab + ", fare=" + fare + "]";
+		return "Booking [cabRate=" + cabRate + ", distance=" + distance + ", totalFare=" + totalFare + "]";
 	}
 	
 	
