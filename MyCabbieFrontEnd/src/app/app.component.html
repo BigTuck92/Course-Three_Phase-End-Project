@@ -8,13 +8,25 @@
 </head>
 
 <body>
-  <div th:each="cab : ${cabs}">
-    <button type="button" class="btn btn-secondary">
-      <ul>
-        <li th:text="${cab.type}"></li>
-        <li th:text="${cab.rate}"></li>
-      </ul>
-    </button>
+  <div>
+    <h1>Welcome to My Cabbie</h1>
+  </div>
+  <div>
+    <form action="" method="post">
+      <div class="mb-3">
+        <label for="cabs" class="form-label">Choose a Cab:</label>
+        <select id="cabs" name="cabs" class="form-control">
+          <option value="5">Sedan: Seats up to 3 | $5/Mile</option>
+          <option value="7">SUV: Seats up to 6 | $7/Mile</option>
+          <option value="10">Extended: Seats up to 10 | $10/Mile</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="mileage" class="form-label">Enter your projected distance:</label>
+        <input type="number" class="form-control" id="mileage" placeholder="In Miles">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 </body>
 
