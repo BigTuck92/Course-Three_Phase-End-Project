@@ -1,11 +1,20 @@
 package Project.MyCabbie.BookingMS.model;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Booking {
 
 	// Fields
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer id;
+
 	private Integer cabRate;
 	private Integer distance;
 	private Double totalFare;

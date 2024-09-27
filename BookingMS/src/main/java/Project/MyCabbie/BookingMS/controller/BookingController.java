@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import Project.MyCabbie.BookingMS.config.FeignService;
 import Project.MyCabbie.BookingMS.model.Booking;
+import Project.MyCabbie.BookingMS.service.BookingService;
 
 @RestController
 @RequestMapping(path="book")
@@ -19,11 +20,16 @@ public class BookingController {
 	@Autowired
 	private FeignService feignService;
 	
+	@Autowired
+	private BookingService bookingService;
+	
 	@PostMapping
 	public ResponseEntity<Booking> bookCab(@RequestBody Booking booking){
 		
 		ResponseEntity<Double> fare = feignService.calculateFare(booking.getCabRate(), booking.getDistance());
 		booking.setTotalFare(fare.getBody());
+		
+		bookingService.saveBooking(booking);
 		
 		return new ResponseEntity<Booking>(booking, HttpStatus.OK);
 	}
