@@ -2,21 +2,28 @@ package Project.MyCabbie.BookingMS.model;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@JsonIgnoreProperties
 @Entity
 public class Booking {
 
 	// Fields
+	@JsonProperty("bookingId")
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
-
+	@JsonProperty("cabRate")
 	private Integer cabRate;
+	@JsonProperty("distance")
 	private Integer distance;
+	@JsonProperty("totalFare")
 	private Double totalFare;
 	
 	// Constructors

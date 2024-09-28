@@ -1,13 +1,39 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BookingServiceService } from './booking-service.service';
+import { Booking } from './booking.model';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'MyCabbieFrontEnd';
+  // title = 'MyCabbieFrontEnd';
+
+  booking: Booking = {
+    bookingId: 0, // Or any default value
+    cabRate: 0,
+    distance: 0,
+    totalFare: 0, // This can be omitted or left as 0
+  };
+
+  constructor(private bookingService: BookingServiceService) {}
+
+  submitBooking() {
+    this.bookingService.createBooking(this.booking).subscribe({
+      next: (response) => {
+        console.log('Booking created:', response);
+        // Optionally reset the form or show a success message
+      },
+      error: (error) => {
+        console.error('Error creating booking:', error);
+      }
+    });
+  }
 }

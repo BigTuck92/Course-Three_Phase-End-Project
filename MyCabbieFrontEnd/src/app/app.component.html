@@ -1,33 +1,20 @@
-<!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Cabbie</title>
-</head>
-
-<body>
-  <div>
-    <h1>Welcome to My Cabbie</h1>
-  </div>
-  <div>
-    <form action="" method="post">
-      <div class="mb-3">
-        <label for="cabs" class="form-label">Choose a Cab:</label>
-        <select id="cabs" name="cabs" class="form-control">
-          <option value="5">Sedan: Seats up to 3 | $5/Mile</option>
-          <option value="7">SUV: Seats up to 6 | $7/Mile</option>
-          <option value="10">Extended: Seats up to 10 | $10/Mile</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label for="mileage" class="form-label">Enter your projected distance:</label>
-        <input type="number" class="form-control" id="mileage" placeholder="In Miles">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-</body>
-
-</html>
+<div>
+  <h1>Welcome to My Cabbie</h1>
+</div>
+<div>
+  <form (ngSubmit)="submitBooking()" #bookingForm="ngForm">
+    <div class="mb-3">
+      <label for="cabRate" class="form-label">Choose a Cab:</label>
+      <select id="cabRate" name="cabRate" class="form-control" [(ngModel)]="booking.cabRate" required #cabRate="ngModel">
+        <option [value]="5">Sedan: Seats up to 3 | $5/Mile</option>
+        <option [value]="7">SUV: Seats up to 6 | $7/Mile</option>
+        <option [value]="10">Extended: Seats up to 10 | $10/Mile</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="distance" class="form-label">Enter your projected distance:</label>
+      <input type="number" class="form-control" id="distance" placeholder="In Miles" [(ngModel)]="booking.distance" name="distance" required #distance="ngModel">
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!bookingForm.form.valid">Submit</button>
+  </form>
+</div>
