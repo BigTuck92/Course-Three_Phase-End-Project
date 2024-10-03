@@ -2300,3 +2300,16 @@ org.apache.maven.settings.building.SettingsBuildingException: 2 problems were en
 	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:229)
 	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-09-28 12:26:23,288 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-28 12:26:24,410 [Worker-0: Repository registry initialization] ERROR o.e.m.c.internal.embedder.MavenImpl - Could not read settingsCacheMap.xml, assuming default values
+org.apache.maven.settings.building.SettingsBuildingException: 2 problems were encountered while building the effective settings
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+[FATAL] Non-readable settings C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf: C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf (Access is denied) @ C:\Users\natha\Downloads\Extracts\apache-maven-3.9.8\conf
+
+	at org.apache.maven.settings.building.DefaultSettingsBuilder.build(DefaultSettingsBuilder.java:115)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$MavenSettings.getSettings(MavenImpl.java:1117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:279)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getSettings(MavenImpl.java:273)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:229)
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
